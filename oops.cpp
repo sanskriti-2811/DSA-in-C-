@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 
 using namespace std;
 class Hero
@@ -9,6 +10,8 @@ private:
 public:
   char level;
   char *name;
+
+   static int time_to_complete;
  //constructor 
   Hero(){
     cout<<"Constructor call"<<endl;
@@ -62,34 +65,62 @@ int getLevel(){
   void setName(char name[]){
     this->name= name;
   }
+ 
+  static int rabndom(){
+    cout<<time_to_complete<<endl;
+  }
+  //Destructor 
+  ~Hero(){
+    cout<<"Destructor bhai call"<<endl;
+
+  }
 };
-
+//static keyword
+int Hero :: time_to_complete =5;
 int main()
-{
+{   
+    cout<<Hero::rabndom<<endl;
 
 
+//  cout<<Hero::time_to_complete<<endl;
+
+//  Hero a;
+//   cout<<a.time_to_complete<<endl;
+
+
+
+
+  //  Hero a;
+  //  Hero *b =new Hero();
+  //  //manuallay 
+  //  delete b;
+
+     
  //shallow copy concept
-    Hero one;
-    one.setHealth(70);
-    one.setLevel('c');
-    char name[10]="Sanskriti";
-    one.setName(name);
-    one.print();
+    // Hero one;
+    // one.setHealth(70);
+    // one.setLevel('c');
+    // char name[10]="Sanskriti";
+    // one.setName(name);
+   // one.print();
 
-    Hero two(one);
-    two.print();
+  //   Hero two(one);
+   // two.print();
     
-    one.name[0]='G';
-    one.print();
+  //   one.name[0]='G';
+    // one.print();
 
-    two.print();
-
-
+    // two.print();
 
 
+    //copy assignment operator.
+    // one=two;
+    //  one.print();
+
+    // two.print();
 
 
-
+   
 
 
 
