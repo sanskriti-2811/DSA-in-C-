@@ -1,3 +1,3 @@
- // one.print();
-
-    // two.print();
+ void speek(){
+//     cout<<"Barcking"<<endl;
+//   }
