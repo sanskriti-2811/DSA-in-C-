@@ -1,5 +1,9 @@
 #include <iostream>
 using namespace std;
+
+void printName(int n){
+    if(n<=5)
+}
 //*******************factorial**********************
 // int factorial(int n)
 // {
@@ -42,23 +46,23 @@ using namespace std;
 //     }
 //  }
 
-bool sorted(int arr[],int n){
-  for(int i=0; i<n;i++){
-        if(arr[i]>arr[i+1]){
-            return false ;
-        }
-        else {
-            return true;
-        }
-     }
-}
+// bool sorted(int arr[],int n){
+//   for(int i=0; i<n;i++){
+//         if(arr[i]>arr[i+1]){
+//             return false ;
+//         }
+//         else {
+//             return true;
+//         }
+//      }
+// }
 
 int main()
 {
 
-    int n;
-     int arr[]={2,1,3,4,5};
-  cout<<sorted(arr,5);
+//     int n;
+//      int arr[]={2,1,3,4,5};
+//   cout<<sorted(arr,5);
      
     //  cout<<sorted(arr,5)<<endl;
     // cout << fib(6) << endl;
